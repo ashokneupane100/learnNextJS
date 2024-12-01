@@ -9,5 +9,5 @@ export const generateMetadata = async (props, parent) => {
 };
 
 export default function ProductDetails(props) {
-  return `<h1>Details about product ${props.params.productId}</h1>`;
+  return `Details about product ${props.params.productId}`;
 }

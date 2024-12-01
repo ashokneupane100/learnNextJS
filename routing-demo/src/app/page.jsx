@@ -1,5 +1,5 @@
 import Head from 'next/head'; // Import Head component for SEO
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -11,7 +11,9 @@ export default function Home() {
 
       <main> {/* Wrap main content in a <main> tag for semantic HTML */}
         <h1>Welcome Home!</h1>
-        <p>This is my homepage.</p> {/* Add some more content */}
+        
+        <Link href="/blog"><p>This is my blogpage.</p> </Link>
+        <Link href="/products">Products</Link>
       </main>
     </div>
   );
